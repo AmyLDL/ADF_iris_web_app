@@ -1,34 +1,5 @@
 from calc import predict_species
 
-def test_zero ():
-    # Arrange
-    sepal_length = 0
-    sepal_width = 0
-    petal_length = 0
-    petal_width = 0
-    expected_species = "non predicted"
-
-    # Act
-    final_species = predict_species(sepal_length, sepal_width, petal_length, petal_width)
-
-    # Assert
-    assert final_species == expected_species
-
-
-def test_Zero_outofrange ():
-    # Arrange
-    sepal_length = 2.0
-    sepal_width = 1.5
-    petal_length = 0.5
-    petal_width = 3.0
-    expected_species = "non predicted"
-
-    # Act
-    final_species = predict_species(sepal_length, sepal_width, petal_length, petal_width)
-
-    # Assert
-    assert final_species == expected_species
-
 def test_setosa ():
     # Arrange
     sepal_length = 5.1
